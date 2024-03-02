@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio-Website von Dorbane Abderrahmen. Eine Zusammenfassung der Berufserfahrung, Fähigkeiten und Kontaktdaten."
+    />
+     <title>Dorbane Abderrahmen - Portfolio</title>
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- ===================== LOADER ==================== -->
+    <div id="loading">
+      <div class="loader"><span><</span><span>/></span></div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo noSelect">Dorbane</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link noSelect active-link">
+                <i class="uil uil-estate nav__icon"></i> Startseite
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link noSelect">
+                <i class="uil uil-user nav__icon"></i> Über mich
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link noSelect">
+                <i class="uil uil-file-alt nav__icon"></i> Fähigkeiten
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link noSelect">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link noSelect">
+                <i class="uil uil-message nav__icon"></i> Kontakt
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close noSelect" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme-Änderungsschaltfläche -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle noSelect" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+        <div class="drop-down">
+          <div class="wrapper">
+            <div class="selected"> </div>
+            <i class="uil uil-angle-down  arrow"></i>
+            <div class="list">
+              <div class="item">
+                <img src="img/germany.png" alt="German Flag" onclick="switchToGerman()"/>
+              </div>
+             <div>
+                <img  src="img/united-states (3).png" alt="English Flag" onclick="switchToEnglish()"/>
+              </div>
+              
+            </div>
+        </div>
+        
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__data ">
+              <h1 class="home__title"> 
+                <span class="text sec-text">I'm a  <br></span>
+                <span class="text first-text">  <br>Abderrahmen</span>
+              </h1>
+              <h3 class="home__subtitle">Frontend-Devloper</h3>
+              <p class="home__description">
+                Ich habe eine Leidenschaft dafür, intuitive, <br>
+                benutzerfreundliche Benutzeroberflächen<br> zu erstellen, 
+                die ein angenehmes und<br> nahtloses Benutzererlebnis bieten.
+              </p>
+              <a href="#contact" class="button-message button--flex">
+                Kontaktiere mich<i class="uil uil-message message-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Nach unten scrollen</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+         
+        </div>
+        
+        <div class="profession-container grid">
+          <div class="profession-box grid">
+              <div class="profession" style="--i:0;">
+                  <i class="uil uil-brackets-curly"></i>
+                  <h3> Frontend-Entwickler</h3>
+              </div>
+              <div class="profession" style="--i:1;">
+                <i class="uil uil-brush-alt "></i> 
+                  <h3> Designer</h3>
+              </div>
+              <div class="profession" style="--i:2;">
+                <i class="uil uil-presentation-edit"></i>                  <h3> Lehrer</h3>
+              </div>
+              <div class="circle grid"></div>
+          </div>
+          <div class="overlay grid">        </div>
+  
+          <div class="home-img grid">
+            <img src="img/IMG_2427-removebg-preview.png " alt="" class="img">
+        </div>
+      </div>
+      
+      </section>
+    </main>
+
+    <!--==================== ABOUT ====================-->
+
+    <section class="about section" id="about">
+      <h2 class="section__title">Über mich</h2>
+      <span class="section__subtitle">Meine Vorstellung</span>
+
+      <div class="about__container container grid">
+        <img src="img/lebenslauf005-removebg-preview.png" alt="" class="about__image" />
+
+        <div class="about__data">
+          <p class="about__description">
+            Ich bin Dorbane Abderrahmane, 23 Jahre alt, und habe einen Abschluss in Germanistik. Zusätzlich beherrsche ich die englische Sprache fließend. Meine Leidenschaft gilt der Verfolgung der neuesten Trends und Techniken in der Webentwicklung. Ich bin ständig bestrebt, mein Fähigkeitenrepertoire zu erweitern und habe ein geschultes Auge für Details. In jedem meiner Projekte strebe ich nach Perfektion.
+
+Abseits des Codierens erkunde ich gerne neue Technologien. Sport ist meine Leidenschaft; ich spiele regelmäßig Fußball und nehme aktiv am Training teil.
+          </p>
+
+          <div class="about__buttons">
+            <a download="" href="Lebenslauf-DORBANE ABDERRAHMEN.pdf" class="button button--flex">
+              Download Lebenslauf<i class="uil uil-download-alt button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!--==================== SKILLS ====================-->
+
+     <section class="skills section" id="skills">
+      <h2 class="section__title">Fähigkeiten</h2>
+      <span class="section__subtitle">Mein technisches Level</span>
+      <div class="skills__container container grid">
+        <div class="skills__container-box">
+          <!--==================== SKILLS 1 ====================-->
+
+<div class="skills-content skills-open">
+  <div class="skills-header">
+
+      <div>
+          <h1 class="skill-titel"><i class="uil uil-brackets-curly skill-icon"></i> Frontend
+              developer</h1>
+          <span class="skill-subtitle">Mehr als 7 Monate Erfahrung</span>
+      </div>
+      <i class="uil uil-angle-down  skill-arrow"></i>
+  </div>
+  <div class="skills-list grid">
+      <!----------------HTML------------>
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">HTML</h3>
+              <span class="skill-number">50%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-html"></span>
+          </div>
+      </div>
+      <!----------------CSS------------>
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">CSS</h3>
+              <span class="skill-number">50%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-css"></span>
+          </div>
+      </div>
+       <!----------------CSS------------>
+       <div class="skills-data">
+        <div class="skill-titles">
+            <h3 class="skills-name">TAILWIND</h3>
+            <span class="skill-number">25%</span>
+        </div>
+        <div class="skills-bar">
+            <span class="skills-percentage skills-css"></span>
+        </div>
+    </div>
+      <!----------------JAVASCRIPT------------>
+
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">JAVASCRIPT</h3>
+              <span class="skill-number">20%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-javascript"></span>
+          </div>
+      </div>
+      <!----------------NEXTJS------------>
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">NEXTJS</h3>
+              <span class="skill-number">10%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-nextjs"></span>
+          </div>
+      </div>
+      <!----------------C++------------>
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">C++</h3>
+              <span class="skill-number">5%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-c"></span>
+          </div>
+      </div>
+  </div>
+</div>
+<!--==================== SKILL 2 ====================-->
+<div class="skills-content skills-close">
+  <div class="skills-header">
+      <div>
+          <h1 class="skill-titel"> <i class="uil uil-brush-alt skill-icon"></i> Designer </h1>
+          <span class="skill-subtitle">Mehr als 1 Jahre Erfahrung</span>
+
+      </div>
+      <i class="uil uil-angle-down  skill-arrow"></i>
+  </div>
+  <div class="skills-list grid">
+      <!----------------PHOTOSHOP------------>
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">Photoshop</h3>
+              <span class="skill-number">40%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-Photoshop"></span>
+          </div>
+      </div>
+      <!----------------ILLUSTRATOR------------>
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">Illustrator</h3>
+              <span class="skill-number">30%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-illustrator"></span>
+          </div>
+      </div>
+      <!----------------PREMIER PRO------------>
+
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">Premiere Pro</h3>
+              <span class="skill-number">20%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-premiere"></span>
+          </div>
+      </div>
+  </div>
+</div>
+<!--==================== SKILLS 3 ====================-->
+<div class="skills-content skills-close">
+  <div class="skills-header">
+      <div>
+          <h1 class="skill-titel"> <i class="uil uil-wrap-text skill-icon"></i> Microsoft Office
+          </h1>
+          <span class="skill-subtitle">Mehr als 1 Jahre Erfahrung</span>
+
+      </div>
+      <i class="uil uil-angle-down skill-arrow"></i>
+
+  </div>
+  <div class="skills-list grid">
+      <!----------------WORD------------>
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">Word</h3>
+              <span class="skill-number">70%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-word"></span>
+          </div>
+      </div>
+      <!----------------EXCEL------------>
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">Excel</h3>
+              <span class="skill-number">40%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-excel"></span>
+          </div>
+      </div>
+      <!----------------POWERPOINT------------>
+
+      <div class="skills-data">
+          <div class="skill-titles">
+              <h3 class="skills-name">PowerPoint</h3>
+              <span class="skill-number">45%</span>
+          </div>
+          <div class="skills-bar">
+              <span class="skills-percentage skills-powerpoint"></span>
+          </div>
+      </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+         <!--==================== Qualification ====================-->
+
+    <section class="qualification section">
+      <h2 class="section__title">Qualifikation</h2>
+      <span class="section__subtitle">Meine persönliche Reise</span>
+  
+      <div class="qualification__container container">
+          <div class="qualification__tabs">
+              <div class="qualification__button button--flex qualification__active" data-target="#work">
+                  <i class="uil uil-briefcase-alt qualification__icon"> </i> Arbeit
+              </div>
+  
+              <div class="qualification__button button--flex" data-target="#education">
+                  <i class="uil uil-graduation-cap qualification__icon"> </i> Bildung
+              </div>
+          </div>
+      </div>
+  
+      <div class="qualification__sections">
+  
+          <!--==================== QUALIFIKATIONSINHALT 1====================-->
+          <div class="qualification-content qualification-active" data-content id="education">
+              <!--==================== QUALIFIKATION 1 ====================-->
+  
+              <div class="qualification__data">
+                  <div class="qualification__title">Master</div>
+                  <div>
+                      <span class="qualification__rounder"></span>
+                      <span class="qualification__line"></span>
+  
+                  </div>
+                  <span class="qualification__subtitle">Algier - Universität Kacem-Saad-Allah- </span>
+                  <div class="qualification__calender">
+                      <i class="uil uil-schedule"></i>
+                      2021-2023
+                  </div>
+              </div>
+  
+  
+  
+              <!--==================== QUALIFIKATION 2 ====================-->
+              <div class="qualification__data">
+  
+  
+                  <div class="qualification__title">Bachelor</div>
+                  <div>
+                      <span class="qualification__rounder"></span>
+                      <span class="qualification__line"></span>
+                  </div>
+                  <span class="qualification__subtitle">Algier - Universität Kacem-Saad-Allah</span>
+                  <div class="qualification__calender">
+                      <i class="uil uil-schedule"></i>
+                      2018-2021
+                  </div>
+              </div>
+  
+  
+              <!--==================== QUALIFIKATION 3 ====================-->
+              <div class="qualification__data">
+  
+  
+                  <div class="qualification__title">Abitur</div>
+                  <div>
+                      <span class="qualification__rounder"></span>
+                      <span class="qualification__line"></span>
+                  </div>
+                  <span class="qualification-subtitle">Dirah</span>
+                  <div class="qualification__calender">
+                      <i class="uil uil-schedule"></i>
+                      2015-2018
+                  </div>
+                  <div>
+                      <br>
+                      <span class="qualification__rounder"></span>
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+          <!--==================== QUALIFIKATIONSINHALT 2 ====================-->
+  
+          <div class="qualification-content qualification" data-content id="work">
+              <!--==================== QUALIFIKATION 1 ====================-->
+  
+              <div class="qualification__data">
+                  <div class="qualification__title">Lehrer</div>
+                  <div>
+                      <span class="qualification__rounder"></span>
+                      <span class="qualification__line"></span>
+  
+                  </div>
+                  <span class="qualification__subtitle">Algier - Universität Kacem-Saad-Allah- Modul "Linguistik" </span>
+                  <div class="qualification__calender-2">
+                      <i class="uil uil-schedule"></i>
+                      2023-07 / 2023-03
+                  </div>
+              </div>
+  
+  
+  
+              <!--==================== QUALIFIKATION 2 ====================-->
+              <div class="qualification__data">
+  
+  
+                  <div class="qualification__title">Verkäufer</div>
+                  <div>
+                      <span class="qualification__rounder"></span>
+                      <span class="qualification__line"></span>
+                  </div>
+                  <span class="qualification__subtitle">
+                      Verkäufer in einer Bäckerei </span>
+                  <div class="qualification__calender-1">
+                      <i class="uil uil-schedule"></i>
+                      2018-2021
+                  </div>
+              </div>
+  
+  
+              <!--==================== QUALIFIKATION 3 ====================-->
+              <div class="qualification__data">
+  
+  
+                  <div class="qualification__title">Freelancer</div>
+                  <div>
+                      <span class="qualification__rounder"></span>
+                  </div>
+                  <span class="qualification__subtitle"> </span>
+                  <div class="qualification__calender">
+                      <i class="uil uil-schedule"></i>
+                      2015-2018
+                  </div>
+  
+              </div>
+  
+  
+          </div>
+  
+  
+      </div>
+  </section>
+  
+    <!--==================== SERVICES ====================-->
+
+    <section class="services section" id="services">
+      <h2 class="section__title">Services</h2>
+      <span class="section__subtitle">Was ich anbieten kann</span>
+
+      <div class="services__container container grid">
+        <!--==================== SERVICES 1 ====================-->
+        <div class="services__content">
+          <div>
+            <i class="uil uil-brush-alt services__icon "></i> 
+            <h3 class="services__title">Designer</h3>
+          </div>
+
+          <span class="button button--flex button--small button--link services__button">
+            Mehr erfahren
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title">Webdesign</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i> Erstellung benutzerfreundlicher Oberflächen.
+                </li>
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i> Entwicklung responsiver Websites.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+           <!--==================== SERVICE 2 ====================-->
+
+      <div class="services__content">
+        <div>
+          <i class="uil uil-arrow services__icon"></i>
+          <h3 class="services__title">Frontend <br />Developer</h3>
+        </div>
+
+        <span
+          class="button button--flex button--small button--link services__button"
+        >
+        Mehr erfahren
+                  <i class="uil uil-arrow-right button__icon"></i>
+        </span>
+
+        <div class="services__modal">
+          <div class="services__modal-content">
+            <h4 class="services__modal-title">Frontend<br />Developer</h4>
+            <i class="uil uil-times services__modal-close"></i>
+            <ul class="services__modal-services grid">
+              <li class="services__modal-service">
+                <i class="uil uil-check-circle services__modal-icon"></i>
+                <p>
+                  "I entwickle web applications und erstelle die user-facing Komponenten."
+
+ 
+                </p>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+           
+
+
+    </section>
+
+    <!--==================== CONTACT ====================-->
+
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Kontakt </h2>
+      <span class="section__subtitle">Lass uns arbeiten!</span>
+
+      <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <i class="uil uil-phone contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Ruf mich an</h3>
+              <span class="contact__subtitle">+213 656 01 92 90</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+
+            <div>
+              <a href="dorbaneabderrahmen@gmail.com" target="_blank">
+             
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">dorbaneabderrahmen@gmail.com</span>
+            </a>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Standort</h3>
+              <span class="contact__subtitle">Bouira, Algieren</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="mailto:dorbaneabderrahmen@gmail.com" method="get" enctype="text/plain" class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="text" name="subject" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Email</label>
+              <input type="email" name="email" class="contact__input" />
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Message</label>
+            <textarea name="body" id="" cols="0" rows="7" class="contact__input"></textarea>
+          </div>
+          <div>
+              <button class="button button--flex" >Absenden            
+                   <i class="uil uil-message button__icon"></i>
+             </button> 
+            
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Dorbane</h1>
+            <span class="footer__subtitle">Frontend Developer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#about" class="footer__link">Über mich</a>
+            </li>
+             
+              <a href="#contact" class="footer__link">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.facebook.com/siik.ham?mibextid=ZbWKwL              "
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-facebook-f"></i>
+            </a>
+            <a
+            href="https://www.instagram.com/abdou_drr/              "
+            target="_blank"
+            class="footer__social"
+          >
+            <i class="uil uil-instagram"></i>
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; 2023 Dorbane. Alle Rechte vorbehalten.</p>
+    </footer>
+<!--==================== SCROLL TOP ====================-->
+
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="js/main.js"></script>
+
+    <!-- ===================== SHOW/HIDE LOADER ==================== -->
+    <script>
+      window.onload = function () {
+        document.getElementById("loading").style.display = "none";
+      };
+    </script>
+
+    <!-- =====================REGISTER SERVICE WORKER================ -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then((res) => console.log("service worker registered"))
+            .catch((err) => console.log("service worker not registered", err));
+        });
+      }
+    </script>
+</html>
+
